@@ -1,4 +1,5 @@
 import { ApolloServer } from 'apollo-server-micro';
+import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core';
 import { getBuiltMesh } from './.mesh';
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -23,6 +24,11 @@ export default async function createApolloServer() {
         operationName: requestContext.operationName,
       });
     },
+    plugins: [
+      ApolloServerPluginLandingPageGraphQLPlayground({
+        endpoint: '/api/graphql',
+      }),
+    ],
   });
 
   return apolloServer;
