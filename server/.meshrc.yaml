@@ -1,0 +1,6 @@
+sources:
+  - name: Algora
+    handler:
+      openapi:
+        source: ./schema.json
+        baseUrl: https://app.algora.io/api/v1
