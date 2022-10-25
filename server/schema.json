@@ -15593,6 +15593,7 @@
     "AccessTokenList": {
       "description": "AccessTokenList represents a list of API access token.",
       "schema": {
+        "title": "AccessToken",
         "type": "array",
         "items": {
           "$ref": "#/definitions/AccessToken"
@@ -15602,6 +15603,7 @@
     "AdminPreUserStartupList": {
       "description": "AdminPreUserStartupList",
       "schema": {
+        "title": "AdminPreUserStartup",
         "type": "array",
         "items": {
           "$ref": "#/definitions/AdminPreUserStartup"
@@ -15617,6 +15619,7 @@
     "AdminPreUserStudentList": {
       "description": "AdminPreUserStudentList",
       "schema": {
+        "title": "AdminPreUserStudent",
         "type": "array",
         "items": {
           "$ref": "#/definitions/AdminPreUserStudent"
@@ -15632,6 +15635,7 @@
     "AttachmentList": {
       "description": "AttachmentList",
       "schema": {
+        "title": "Attachment",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Attachment"
@@ -15647,6 +15651,7 @@
     "BankAccountList": {
       "description": "BankAccountList",
       "schema": {
+        "title": "BankAccount",
         "type": "array",
         "items": {
           "$ref": "#/definitions/BankAccount"
@@ -15668,6 +15673,7 @@
     "BountyList": {
       "description": "BountyList",
       "schema": {
+        "title": "Bounty",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Bounty"
@@ -15689,6 +15695,7 @@
     "BranchList": {
       "description": "BranchList",
       "schema": {
+        "title": "Branch",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Branch"
@@ -15710,6 +15717,7 @@
     "CardPaymentMethodList": {
       "description": "CardPaymentMethodList",
       "schema": {
+        "title": "CardPaymentMethod",
         "type": "array",
         "items": {
           "$ref": "#/definitions/CardPaymentMethod"
@@ -15731,6 +15739,7 @@
     "CommentList": {
       "description": "CommentList",
       "schema": {
+        "title": "Comment",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Comment"
@@ -15746,6 +15755,7 @@
     "ContractList": {
       "description": "ContractList",
       "schema": {
+        "title": "Contract",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Contract"
@@ -15761,6 +15771,7 @@
     "DeployKeyList": {
       "description": "DeployKeyList",
       "schema": {
+        "title": "DeployKey",
         "type": "array",
         "items": {
           "$ref": "#/definitions/DeployKey"
@@ -15776,6 +15787,7 @@
     "DocumentList": {
       "description": "DocumentList",
       "schema": {
+        "title": "Document",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Document"
@@ -15791,6 +15803,7 @@
     "EmailAddressList": {
       "description": "EmailAddressList",
       "schema": {
+        "title": "EmailAddress",
         "type": "array",
         "items": {
           "$ref": "#/definitions/EmailAddress"
@@ -15800,6 +15813,7 @@
     "EmailList": {
       "description": "EmailList",
       "schema": {
+        "title": "Email",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Email"
@@ -15821,6 +15835,7 @@
     "FounderActivityList": {
       "description": "FounderActivityList",
       "schema": {
+        "title": "FounderActivity",
         "type": "array",
         "items": {
           "$ref": "#/definitions/FounderActivity"
@@ -15836,6 +15851,7 @@
     "GPGKeyList": {
       "description": "GPGKeyList",
       "schema": {
+        "title": "GPGKey",
         "type": "array",
         "items": {
           "$ref": "#/definitions/GPGKey"
@@ -15854,6 +15870,7 @@
     "HookList": {
       "description": "HookList",
       "schema": {
+        "title": "Branch",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Branch"
@@ -15875,6 +15892,7 @@
     "InterviewList": {
       "description": "InterviewList",
       "schema": {
+        "title": "Interview",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Interview"
@@ -15884,6 +15902,7 @@
     "InviteeActivityList": {
       "description": "InviteeActivityList",
       "schema": {
+        "title": "InviteeActivity",
         "type": "array",
         "items": {
           "$ref": "#/definitions/InviteeActivity"
@@ -15905,6 +15924,7 @@
     "IssueList": {
       "description": "IssueList",
       "schema": {
+        "title": "Issue",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Issue"
@@ -15926,6 +15946,7 @@
     "JobCandidateList": {
       "description": "JobCandidateList",
       "schema": {
+        "title": "JobCandidate",
         "type": "array",
         "items": {
           "$ref": "#/definitions/JobCandidate"
@@ -15941,6 +15962,7 @@
     "JobPostingList": {
       "description": "JobPostingList",
       "schema": {
+        "title": "JobPosting",
         "type": "array",
         "items": {
           "$ref": "#/definitions/JobPosting"
@@ -15962,6 +15984,7 @@
     "LabelList": {
       "description": "LabelList",
       "schema": {
+        "title": "Label",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Label"
@@ -15977,6 +16000,7 @@
     "MessageList": {
       "description": "MessageList",
       "schema": {
+        "title": "Message",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Message"
@@ -15998,6 +16022,7 @@
     "MilestoneList": {
       "description": "MilestoneList",
       "schema": {
+        "title": "Milestone",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Milestone"
@@ -16007,6 +16032,7 @@
     "NotificationList": {
       "description": "NotificationList",
       "schema": {
+        "title": "Notification",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Notification"
@@ -16022,6 +16048,7 @@
     "OrgMemberList": {
       "description": "OrgMemberList",
       "schema": {
+        "title": "OrgMember",
         "type": "array",
         "items": {
           "$ref": "#/definitions/OrgMember"
@@ -16037,6 +16064,7 @@
     "OrganizationList": {
       "description": "OrganizationList",
       "schema": {
+        "title": "Organization",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Organization"
@@ -16052,6 +16080,7 @@
     "PaymentList": {
       "description": "PaymentList",
       "schema": {
+        "title": "Payment",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Payment"
@@ -16067,6 +16096,7 @@
     "PreUserStartupList": {
       "description": "PreUserStartupList",
       "schema": {
+        "title": "PreUserStartup",
         "type": "array",
         "items": {
           "$ref": "#/definitions/PreUserStartup"
@@ -16076,6 +16106,7 @@
     "PreUserStudentList": {
       "description": "PreUserStudentList",
       "schema": {
+        "title": "PreUserStudent",
         "type": "array",
         "items": {
           "$ref": "#/definitions/PreUserStudent"
@@ -16103,6 +16134,7 @@
     "ProjectSprintList": {
       "description": "ProjectSprintList",
       "schema": {
+        "title": "ProjectSprint",
         "type": "array",
         "items": {
           "$ref": "#/definitions/ProjectSprint"
@@ -16118,6 +16150,7 @@
     "PublicKeyList": {
       "description": "PublicKeyList",
       "schema": {
+        "title": "PublicKey",
         "type": "array",
         "items": {
           "$ref": "#/definitions/PublicKey"
@@ -16133,6 +16166,7 @@
     "PullRequestList": {
       "description": "PullRequestList",
       "schema": {
+        "title": "PullRequest",
         "type": "array",
         "items": {
           "$ref": "#/definitions/PullRequest"
@@ -16148,6 +16182,7 @@
     "ReferenceList": {
       "description": "ReferenceList",
       "schema": {
+        "title": "Reference",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Reference"
@@ -16169,6 +16204,7 @@
     "ReleaseList": {
       "description": "ReleaseList",
       "schema": {
+        "title": "Release",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Release"
@@ -16184,6 +16220,7 @@
     "RepositoryList": {
       "description": "RepositoryList",
       "schema": {
+        "title": "Repository",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Repository"
@@ -16199,6 +16236,7 @@
     "RequestList": {
       "description": "RequestList",
       "schema": {
+        "title": "Request",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Request"
@@ -16226,6 +16264,7 @@
     "SolverActivityList": {
       "description": "SolverActivityList",
       "schema": {
+        "title": "SolverActivity",
         "type": "array",
         "items": {
           "$ref": "#/definitions/SolverActivity"
@@ -16247,6 +16286,7 @@
     "StatusList": {
       "description": "StatusList",
       "schema": {
+        "title": "Status",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Status"
@@ -16280,6 +16320,7 @@
     "TeamList": {
       "description": "TeamList",
       "schema": {
+        "title": "Team",
         "type": "array",
         "items": {
           "$ref": "#/definitions/Team"
@@ -16295,6 +16336,7 @@
     "TrackedTimeList": {
       "description": "TrackedTimeList",
       "schema": {
+        "title": "TrackedTime",
         "type": "array",
         "items": {
           "$ref": "#/definitions/TrackedTime"
@@ -16319,6 +16361,7 @@
     "UserList": {
       "description": "UserList",
       "schema": {
+        "title": "User",
         "type": "array",
         "items": {
           "$ref": "#/definitions/User"
