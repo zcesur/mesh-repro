@@ -1,16 +1,7 @@
 {
-  "consumes": [
-    "application/json",
-    "text/plain"
-  ],
-  "produces": [
-    "application/json",
-    "text/html"
-  ],
-  "schemes": [
-    "http",
-    "https"
-  ],
+  "consumes": ["application/json", "text/plain"],
+  "produces": ["application/json", "text/html"],
+  "schemes": ["http", "https"],
   "swagger": "2.0",
   "info": {
     "description": "This documentation describes the Algora API.",
@@ -21,12 +12,8 @@
   "paths": {
     "/admin/activity/founders": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List activity of all founders",
         "operationId": "adminListFounderActivity",
         "parameters": [
@@ -46,12 +33,8 @@
     },
     "/admin/activity/invitees": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List activity of all invitees",
         "operationId": "adminListInviteeActivity",
         "parameters": [
@@ -71,12 +54,8 @@
     },
     "/admin/activity/solvers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List activity of all solvers",
         "operationId": "adminListSolverActivity",
         "parameters": [
@@ -96,12 +75,8 @@
     },
     "/admin/bounties": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List all bounties",
         "operationId": "adminListBounties",
         "parameters": [
@@ -127,12 +102,8 @@
     },
     "/admin/documents": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List documents",
         "operationId": "adminListDocuments",
         "responses": {
@@ -144,12 +115,8 @@
     },
     "/admin/email/digest": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Send job digest emails to given users",
         "operationId": "adminSendJobDigestEmail",
         "parameters": [
@@ -176,12 +143,8 @@
     },
     "/admin/email/identifiers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List email identifiers",
         "operationId": "adminListEmailIdentifiers",
         "responses": {
@@ -198,12 +161,8 @@
     },
     "/admin/email/template": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Get email template",
         "operationId": "adminGetEmailTemplate",
         "parameters": [
@@ -223,12 +182,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Render an email",
         "operationId": "adminRenderEmail",
         "parameters": [
@@ -252,12 +207,8 @@
     },
     "/admin/email/templates": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List all email templates",
         "operationId": "adminListEmailTemplates",
         "responses": {
@@ -274,12 +225,8 @@
     },
     "/admin/emails": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List emails",
         "operationId": "adminListEmails",
         "parameters": [
@@ -302,12 +249,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create and send an email",
         "operationId": "adminCreateNewEmail",
         "parameters": [
@@ -328,15 +271,9 @@
     },
     "/admin/entities": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create entity",
         "operationId": "adminCreateEntity",
         "parameters": [
@@ -364,15 +301,9 @@
     },
     "/admin/entities/{id}/logo": {
       "patch": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Edit an entity's logo",
         "operationId": "adminEditEntityLogo",
         "parameters": [
@@ -406,20 +337,13 @@
     },
     "/admin/metrics": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Get the platform metrics",
         "operationId": "adminGetMetrics",
         "parameters": [
           {
-            "enum": [
-              "Founder",
-              "Solver"
-            ],
+            "enum": ["Founder", "Solver"],
             "type": "string",
             "description": "user kind",
             "name": "kind",
@@ -438,15 +362,9 @@
     },
     "/admin/orgs/{org}/avatar": {
       "patch": {
-        "consumes": [
-          "application/octet-stream"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/octet-stream"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Edit an org's avatar",
         "operationId": "adminEditOrgAvatar",
         "parameters": [
@@ -481,12 +399,8 @@
     },
     "/admin/orgs/{org}/teams/{team}/members/{username}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Add a team member",
         "operationId": "adminAddOrgTeamMember",
         "parameters": [
@@ -521,15 +435,9 @@
     },
     "/admin/preorgs": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create a pre-org",
         "operationId": "adminCreatePreOrg",
         "parameters": [
@@ -556,15 +464,9 @@
     },
     "/admin/preorgs/{preorg}": {
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Edit a pre-org",
         "operationId": "adminEditPreOrg",
         "parameters": [
@@ -601,12 +503,8 @@
     },
     "/admin/preusers/startups": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List all pre-user startups",
         "operationId": "adminListPreUserStartups",
         "parameters": [
@@ -617,9 +515,7 @@
             "in": "query"
           },
           {
-            "enum": [
-              "oldest"
-            ],
+            "enum": ["oldest"],
             "type": "string",
             "description": "Type of sort",
             "name": "sort",
@@ -635,12 +531,8 @@
     },
     "/admin/preusers/students": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List all pre-user students",
         "operationId": "adminListPreUserStudents",
         "parameters": [
@@ -651,9 +543,7 @@
             "in": "query"
           },
           {
-            "enum": [
-              "oldest"
-            ],
+            "enum": ["oldest"],
             "type": "string",
             "description": "Type of sort",
             "name": "sort",
@@ -669,15 +559,9 @@
     },
     "/admin/preusers/students/{id}/resume": {
       "put": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Add a resume on behalf of the given student",
         "operationId": "adminPreUserStudentAddResume",
         "parameters": [
@@ -712,12 +596,8 @@
     },
     "/admin/repos/{owner}/{repo}/pulls/{index}/payment": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Mark pull request as paid",
         "operationId": "adminMarkPullRequestAsPaid",
         "parameters": [
@@ -756,12 +636,8 @@
     },
     "/admin/requests": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "List requests",
         "operationId": "adminListRequests",
         "responses": {
@@ -773,12 +649,8 @@
     },
     "/admin/user/password": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create a new password reset code for the user with the given email",
         "operationId": "adminUserCreatePassword",
         "parameters": [
@@ -808,15 +680,9 @@
     },
     "/admin/users": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create a user",
         "operationId": "adminCreateUser",
         "parameters": [
@@ -843,15 +709,9 @@
     },
     "/admin/users/insts": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create an institution",
         "operationId": "adminCreateInst",
         "parameters": [
@@ -879,12 +739,8 @@
     },
     "/admin/users/{username}": {
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Delete a user",
         "operationId": "adminDeleteUser",
         "parameters": [
@@ -909,15 +765,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Edit an existing user",
         "operationId": "adminEditUser",
         "parameters": [
@@ -951,15 +801,9 @@
     },
     "/admin/users/{username}/avatar": {
       "patch": {
-        "consumes": [
-          "application/octet-stream"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/octet-stream"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Edit a user's avatar",
         "operationId": "adminEditUserAvatar",
         "parameters": [
@@ -994,15 +838,9 @@
     },
     "/admin/users/{username}/education": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Add an education",
         "operationId": "adminAddEducation",
         "parameters": [
@@ -1036,15 +874,9 @@
     },
     "/admin/users/{username}/experience": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Add an experience",
         "operationId": "adminAddExperience",
         "parameters": [
@@ -1078,15 +910,9 @@
     },
     "/admin/users/{username}/keys": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Add a public key on behalf of a user",
         "operationId": "adminCreatePublicKey",
         "parameters": [
@@ -1120,12 +946,8 @@
     },
     "/admin/users/{username}/keys/{id}": {
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Delete a user's public key",
         "operationId": "adminDeleteUserPublicKey",
         "parameters": [
@@ -1160,15 +982,9 @@
     },
     "/admin/users/{username}/orgs": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create an organization",
         "operationId": "adminCreateOrg",
         "parameters": [
@@ -1203,15 +1019,9 @@
     },
     "/admin/users/{username}/repos": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "admin"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["admin"],
         "summary": "Create a repository on behalf a user",
         "operationId": "adminCreateRepo",
         "parameters": [
@@ -1246,12 +1056,8 @@
     },
     "/bounties": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "List the bounties that the authenticated user has access to",
         "operationId": "bountyListBounties",
         "parameters": [
@@ -1277,12 +1083,8 @@
     },
     "/bounties/{institution}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "List the public bounties that are created by a user or an organization that is associated with the given institution as well as the community bounties that are available to solvers from the given institution.",
         "operationId": "bountyListInstitutionBounties",
         "parameters": [
@@ -1315,15 +1117,9 @@
     },
     "/businesses": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "business"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["business"],
         "summary": "Create a business",
         "operationId": "businessCreate",
         "parameters": [
@@ -1347,12 +1143,8 @@
     },
     "/chat/{owner}/{repo}/{page}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "chat"
-        ],
+        "produces": ["application/json"],
+        "tags": ["chat"],
         "summary": "List the chat messages of a repo",
         "operationId": "chatGetMessages",
         "parameters": [
@@ -1386,12 +1178,8 @@
     },
     "/insts/{inst}/depts": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "institution"
-        ],
+        "produces": ["application/json"],
+        "tags": ["institution"],
         "summary": "List an institution's departments",
         "operationId": "instListDepts",
         "parameters": [
@@ -1412,12 +1200,8 @@
     },
     "/invitation/{hash}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "misc"
-        ],
+        "produces": ["application/json"],
+        "tags": ["misc"],
         "summary": "Get invitation data",
         "operationId": "getInvitationData",
         "parameters": [
@@ -1447,12 +1231,8 @@
     },
     "/job/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "job"
-        ],
+        "produces": ["application/json"],
+        "tags": ["job"],
         "summary": "Get the job with the given id",
         "operationId": "jobGetJob",
         "parameters": [
@@ -1474,12 +1254,8 @@
     },
     "/jobs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "job"
-        ],
+        "produces": ["application/json"],
+        "tags": ["job"],
         "summary": "List all available jobs",
         "operationId": "jobListJobs",
         "parameters": [
@@ -1499,12 +1275,8 @@
     },
     "/jobs/{token}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "job"
-        ],
+        "produces": ["application/json"],
+        "tags": ["job"],
         "summary": "Get the job associated with the provided invitation token",
         "operationId": "jobGetJobByToken",
         "parameters": [
@@ -1525,15 +1297,9 @@
     },
     "/markdown": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "text/html"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["text/html"],
+        "tags": ["miscellaneous"],
         "summary": "Render a markdown document as HTML",
         "operationId": "renderMarkdown",
         "parameters": [
@@ -1557,15 +1323,9 @@
     },
     "/markdown/raw": {
       "post": {
-        "consumes": [
-          "text/plain"
-        ],
-        "produces": [
-          "text/html"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["text/plain"],
+        "produces": ["text/html"],
+        "tags": ["miscellaneous"],
         "summary": "Render raw markdown as HTML",
         "operationId": "renderMarkdownRaw",
         "parameters": [
@@ -1591,12 +1351,8 @@
     },
     "/misc/github/orgs/{org}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "github"
-        ],
+        "produces": ["application/json"],
+        "tags": ["github"],
         "summary": "Get a Github organization",
         "operationId": "githubOrgGet",
         "parameters": [
@@ -1619,15 +1375,9 @@
     },
     "/misc/github/repos/migrate": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "github"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["github"],
         "summary": "Migrate a remote GitHub repository to Algora",
         "operationId": "githubMigrateRepo",
         "parameters": [
@@ -1648,12 +1398,8 @@
     },
     "/misc/github/repos/{owner}/{repo}/issues": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "github"
-        ],
+        "produces": ["application/json"],
+        "tags": ["github"],
         "summary": "List the issues of a remote GitHub repository",
         "operationId": "githubRepoListIssues",
         "parameters": [
@@ -1683,12 +1429,8 @@
     },
     "/misc/github/user/repos": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "github"
-        ],
+        "produces": ["application/json"],
+        "tags": ["github"],
         "summary": "List the GitHub repos for the authenticated user",
         "operationId": "githubListUserRepos",
         "responses": {
@@ -1702,15 +1444,9 @@
     },
     "/org/{org}/repos": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a repository in an organization",
         "operationId": "createOrgRepo",
         "parameters": [
@@ -1744,15 +1480,9 @@
     },
     "/orgs": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create an organization",
         "operationId": "orgCreate",
         "parameters": [
@@ -1780,12 +1510,8 @@
     },
     "/orgs/{org}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Get an organization",
         "operationId": "orgGet",
         "parameters": [
@@ -1804,12 +1530,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Delete an organization",
         "operationId": "orgDelete",
         "parameters": [
@@ -1828,15 +1550,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Edit an organization",
         "operationId": "orgEdit",
         "parameters": [
@@ -1864,15 +1580,9 @@
     },
     "/orgs/{org}/avatar": {
       "patch": {
-        "consumes": [
-          "application/octet-stream"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/octet-stream"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Edit an org's avatar",
         "operationId": "orgEditAvatar",
         "parameters": [
@@ -1904,12 +1614,8 @@
     },
     "/orgs/{org}/bounties": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's bounties",
         "operationId": "orgListBounties",
         "parameters": [
@@ -1930,12 +1636,8 @@
     },
     "/orgs/{org}/contracts": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List all active contracts",
         "operationId": "orgListContracts",
         "parameters": [
@@ -1956,12 +1658,8 @@
     },
     "/orgs/{org}/contracts/{username}": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a contract",
         "operationId": "orgCreateContract",
         "parameters": [
@@ -1996,12 +1694,8 @@
     },
     "/orgs/{org}/documents": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List all active documents",
         "operationId": "orgListDocuments",
         "parameters": [
@@ -2020,15 +1714,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a document",
         "operationId": "orgCreateDocument",
         "parameters": [
@@ -2065,15 +1753,9 @@
     },
     "/orgs/{org}/documents/{uuid}": {
       "post": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a signed document",
         "operationId": "orgCreateSignedDocument",
         "parameters": [
@@ -2120,12 +1802,8 @@
     },
     "/orgs/{org}/hooks": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's webhooks",
         "operationId": "orgListHooks",
         "parameters": [
@@ -2146,15 +1824,9 @@
     },
     "/orgs/{org}/hooks/": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a hook",
         "operationId": "orgCreateHook",
         "parameters": [
@@ -2183,12 +1855,8 @@
     },
     "/orgs/{org}/hooks/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Get a hook",
         "operationId": "orgGetHook",
         "parameters": [
@@ -2215,12 +1883,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Delete a hook",
         "operationId": "orgDeleteHook",
         "parameters": [
@@ -2247,15 +1911,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Update a hook",
         "operationId": "orgEditHook",
         "parameters": [
@@ -2291,12 +1949,8 @@
     },
     "/orgs/{org}/interviews": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List interviews",
         "operationId": "orgListInterviews",
         "responses": {
@@ -2309,12 +1963,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create an interview",
         "operationId": "orgCreateInterview",
         "parameters": [
@@ -2342,12 +1992,8 @@
     },
     "/orgs/{org}/job_postings": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List job postings",
         "operationId": "orgListJobPostings",
         "parameters": [
@@ -2366,12 +2012,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a job posting",
         "operationId": "orgCreateJobPosting",
         "parameters": [
@@ -2399,15 +2041,9 @@
     },
     "/orgs/{org}/job_postings/{post}": {
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Edit a job posting",
         "operationId": "orgEditJobPosting",
         "parameters": [
@@ -2442,12 +2078,8 @@
     },
     "/orgs/{org}/job_postings/{post}/applications": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create an application to a job posting",
         "operationId": "orgJobPostingApply",
         "parameters": [
@@ -2486,12 +2118,8 @@
     },
     "/orgs/{org}/job_postings/{post}/bounties/{bounty}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Link a bounty to a job posting",
         "operationId": "orgJobPostingLinkBounty",
         "parameters": [
@@ -2528,12 +2156,8 @@
     },
     "/orgs/{org}/job_postings/{post}/candidates": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List candidates of a job posting",
         "operationId": "orgJobPostingListCandidates",
         "parameters": [
@@ -2563,12 +2187,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Add candidates to a job posting",
         "operationId": "orgJobPostingAddCandidate",
         "parameters": [
@@ -2607,12 +2227,8 @@
     },
     "/orgs/{org}/job_postings/{post}/interviews/{interview}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Link a interview to a job posting",
         "operationId": "orgJobPostingLinkInterview",
         "parameters": [
@@ -2649,12 +2265,8 @@
     },
     "/orgs/{org}/job_postings/{post}/issues/{repo}/{index}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Link a issue to a job posting",
         "operationId": "orgJobPostingLinkIssue",
         "parameters": [
@@ -2699,12 +2311,8 @@
     },
     "/orgs/{org}/members": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's members",
         "operationId": "orgListMembers",
         "parameters": [
@@ -2725,9 +2333,7 @@
     },
     "/orgs/{org}/members/{username}": {
       "get": {
-        "tags": [
-          "organization"
-        ],
+        "tags": ["organization"],
         "summary": "Check if a user is a member of an organization",
         "operationId": "orgIsMember",
         "parameters": [
@@ -2756,12 +2362,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Remove a member from an organization",
         "operationId": "orgDeleteMember",
         "parameters": [
@@ -2789,12 +2391,8 @@
     },
     "/orgs/{org}/owners": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's owners",
         "operationId": "orgListOwners",
         "parameters": [
@@ -2815,12 +2413,8 @@
     },
     "/orgs/{org}/payments": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "org"
-        ],
+        "produces": ["application/json"],
+        "tags": ["org"],
         "summary": "List payments of the org",
         "operationId": "orgListPayments",
         "parameters": [
@@ -2847,12 +2441,8 @@
     },
     "/orgs/{org}/projects": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a project",
         "operationId": "orgCreateProject",
         "parameters": [
@@ -2880,12 +2470,8 @@
     },
     "/orgs/{org}/projects/{project}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Get a project",
         "operationId": "orgGetProject",
         "parameters": [
@@ -2913,12 +2499,8 @@
     },
     "/orgs/{org}/projects/{project}/sprints": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List the sprints of a project",
         "operationId": "orgListProjectSprints",
         "parameters": [
@@ -2944,12 +2526,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a project sprint",
         "operationId": "orgCreateProjectSprint",
         "parameters": [
@@ -2984,12 +2562,8 @@
     },
     "/orgs/{org}/projects/{project}/sprints/{id}/contributors/{username}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Add a contributor to a project sprint",
         "operationId": "orgAddProjectContributor",
         "parameters": [
@@ -3039,12 +2613,8 @@
     },
     "/orgs/{org}/projects/{project}/sprints/{id}/sponsors": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Sponsor a project",
         "operationId": "orgSponsorProject",
         "parameters": [
@@ -3087,12 +2657,8 @@
     },
     "/orgs/{org}/public_members": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's public members",
         "operationId": "orgListPublicMembers",
         "parameters": [
@@ -3113,9 +2679,7 @@
     },
     "/orgs/{org}/public_members/{username}": {
       "get": {
-        "tags": [
-          "organization"
-        ],
+        "tags": ["organization"],
         "summary": "Check if a user is a public member of an organization",
         "operationId": "orgIsPublicMember",
         "parameters": [
@@ -3144,12 +2708,8 @@
         }
       },
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Publicize a user's membership",
         "operationId": "orgPublicizeMember",
         "parameters": [
@@ -3175,12 +2735,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Conceal a user's membership",
         "operationId": "orgConcealMember",
         "parameters": [
@@ -3208,12 +2764,8 @@
     },
     "/orgs/{org}/repos": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's repos",
         "operationId": "orgListRepos",
         "parameters": [
@@ -3234,12 +2786,8 @@
     },
     "/orgs/{org}/subscription": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Get the subscription of an organization",
         "operationId": "orgGetSubscription",
         "parameters": [
@@ -3263,12 +2811,8 @@
     },
     "/orgs/{org}/teams": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List an organization's teams",
         "operationId": "orgListTeams",
         "parameters": [
@@ -3287,15 +2831,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Create a team",
         "operationId": "orgCreateTeam",
         "parameters": [
@@ -3323,12 +2861,8 @@
     },
     "/orgs/{org}/teams/{team}/members": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List a team's members",
         "operationId": "orgListTeamMembersByName",
         "parameters": [
@@ -3356,12 +2890,8 @@
     },
     "/orgs/{org}/teams/{team}/members/{username}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Add a team member",
         "operationId": "orgAddTeamMemberByName",
         "parameters": [
@@ -3396,12 +2926,8 @@
     },
     "/preorgs/jobs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "List all available jobs",
         "operationId": "listPreOrgJobs",
         "parameters": [
@@ -3421,12 +2947,8 @@
     },
     "/preorgs/{preorg}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Get a pre-org",
         "operationId": "getPreOrg",
         "parameters": [
@@ -3450,15 +2972,9 @@
     },
     "/preorgs/{preorg}/claim_profile": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "misc"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["misc"],
         "summary": "Claim profile from pre-org",
         "operationId": "preOrgClaimProfile",
         "parameters": [
@@ -3485,12 +3001,8 @@
     },
     "/preorgs/{preorg}/job_postings/{post}/candidates": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "List candidates of a pre-org's job posting",
         "operationId": "preOrgJobPostingListCandidates",
         "parameters": [
@@ -3522,12 +3034,8 @@
     },
     "/preusers/startups": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "List all pre-user startups",
         "operationId": "listPreUserStartups",
         "parameters": [
@@ -3538,9 +3046,7 @@
             "in": "query"
           },
           {
-            "enum": [
-              "oldest"
-            ],
+            "enum": ["oldest"],
             "type": "string",
             "description": "Type of sort",
             "name": "sort",
@@ -3556,12 +3062,8 @@
     },
     "/preusers/students": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "List all pre-user students",
         "operationId": "listPreUserStudents",
         "parameters": [
@@ -3572,10 +3074,7 @@
             "in": "query"
           },
           {
-            "enum": [
-              "oldest",
-              "newest"
-            ],
+            "enum": ["oldest", "newest"],
             "type": "string",
             "description": "Type of sort",
             "name": "sort",
@@ -3603,15 +3102,9 @@
     },
     "/repos/migrate": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Migrate a remote git repository",
         "operationId": "repoMigrate",
         "parameters": [
@@ -3632,12 +3125,8 @@
     },
     "/repos/search": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Search for repositories",
         "operationId": "repoSearch",
         "parameters": [
@@ -3703,12 +3192,8 @@
     },
     "/repos/{owner}/{repo}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a repository",
         "operationId": "repoGet",
         "parameters": [
@@ -3734,12 +3219,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Delete a repository",
         "operationId": "repoDelete",
         "parameters": [
@@ -3770,12 +3251,8 @@
     },
     "/repos/{owner}/{repo}/archive/{archive}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get an archive of a repository",
         "operationId": "repoGetArchive",
         "parameters": [
@@ -3810,12 +3287,8 @@
     },
     "/repos/{owner}/{repo}/bounties": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "List a repository's bounties",
         "operationId": "bountyListRepoBounties",
         "parameters": [
@@ -3861,12 +3334,8 @@
     },
     "/repos/{owner}/{repo}/bounties/{index}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Get a bounty",
         "operationId": "bountyGetBounty",
         "parameters": [
@@ -3906,12 +3375,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Create a bounty",
         "operationId": "bountyCreateBounty",
         "parameters": [
@@ -3961,12 +3426,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Delete a bounty",
         "operationId": "bountyDeleteBounty",
         "parameters": [
@@ -4005,12 +3466,8 @@
     },
     "/repos/{owner}/{repo}/bounties/{index}/applications": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Create a request to solve a bounty",
         "operationId": "bountyRequestToSolve",
         "parameters": [
@@ -4052,12 +3509,8 @@
     },
     "/repos/{owner}/{repo}/bounties/{index}/invitees": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Create a bounty",
         "operationId": "bountyInviteSolver",
         "parameters": [
@@ -4103,12 +3556,8 @@
     },
     "/repos/{owner}/{repo}/bounties/{index}/progress": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Get the progress of the current user in solving a bounty",
         "operationId": "userCurrentGetProgress",
         "parameters": [
@@ -4145,12 +3594,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Create the progress of the current user in solving a bounty",
         "operationId": "userCurrentCreateProgress",
         "parameters": [
@@ -4193,12 +3638,8 @@
         }
       },
       "patch": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "Update the progress of the current user in solving a bounty",
         "operationId": "userCurrentUpdateProgress",
         "parameters": [
@@ -4244,12 +3685,8 @@
     },
     "/repos/{owner}/{repo}/bounties/{index}/pulls": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "bounty"
-        ],
+        "produces": ["application/json"],
+        "tags": ["bounty"],
         "summary": "List the pull requests targeting a bounty",
         "operationId": "bountyListPullRequests",
         "parameters": [
@@ -4285,12 +3722,8 @@
     },
     "/repos/{owner}/{repo}/branches": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repository's branches",
         "operationId": "repoListBranches",
         "parameters": [
@@ -4318,12 +3751,8 @@
     },
     "/repos/{owner}/{repo}/branches/{branch}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Retrieve a specific branch from a repository",
         "operationId": "repoGetBranch",
         "parameters": [
@@ -4358,12 +3787,8 @@
     },
     "/repos/{owner}/{repo}/collaborators": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repository's collaborators",
         "operationId": "repoListCollaborators",
         "parameters": [
@@ -4391,12 +3816,8 @@
     },
     "/repos/{owner}/{repo}/collaborators/{collaborator}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Check if a user is a collaborator of a repository",
         "operationId": "repoCheckCollaborator",
         "parameters": [
@@ -4432,12 +3853,8 @@
         }
       },
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Add a collaborator to a repository",
         "operationId": "repoAddCollaborator",
         "parameters": [
@@ -4477,12 +3894,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Delete a collaborator from a repository",
         "operationId": "repoDeleteCollaborator",
         "parameters": [
@@ -4517,12 +3930,8 @@
     },
     "/repos/{owner}/{repo}/commits/{ref}/statuses": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a commit's combined status, by branch/tag/commit reference",
         "operationId": "repoGetCombinedStatusByRef",
         "parameters": [
@@ -4557,12 +3966,8 @@
     },
     "/repos/{owner}/{repo}/editorconfig/{filepath}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get the EditorConfig definitions of a file in a repository",
         "operationId": "repoGetEditorConfig",
         "parameters": [
@@ -4597,12 +4002,8 @@
     },
     "/repos/{owner}/{repo}/fork": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get the fork of a repository belonging to the current user",
         "operationId": "userCurrentGetFork",
         "parameters": [
@@ -4633,12 +4034,8 @@
     },
     "/repos/{owner}/{repo}/forks": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repository's forks",
         "operationId": "listForks",
         "parameters": [
@@ -4664,12 +4061,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Fork a repository",
         "operationId": "createFork",
         "parameters": [
@@ -4704,12 +4097,8 @@
     },
     "/repos/{owner}/{repo}/git/refs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get specified ref or filtered repository's refs",
         "operationId": "repoListAllGitRefs",
         "parameters": [
@@ -4740,12 +4129,8 @@
     },
     "/repos/{owner}/{repo}/git/refs/{ref}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get specified ref or filtered repository's refs",
         "operationId": "repoListGitRefs",
         "parameters": [
@@ -4783,12 +4168,8 @@
     },
     "/repos/{owner}/{repo}/hooks": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List the hooks in a repository",
         "operationId": "repoListHooks",
         "parameters": [
@@ -4814,15 +4195,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Create a hook",
         "operationId": "repoCreateHook",
         "parameters": [
@@ -4857,12 +4232,8 @@
     },
     "/repos/{owner}/{repo}/hooks/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a hook",
         "operationId": "repoGetHook",
         "parameters": [
@@ -4896,12 +4267,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Delete a hook in a repository",
         "operationId": "repoDeleteHook",
         "parameters": [
@@ -4938,12 +4305,8 @@
         }
       },
       "patch": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Edit a hook in a repository",
         "operationId": "repoEditHook",
         "parameters": [
@@ -4986,12 +4349,8 @@
     },
     "/repos/{owner}/{repo}/hooks/{id}/tests": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Test a push webhook",
         "operationId": "repoTestHook",
         "parameters": [
@@ -5027,12 +4386,8 @@
     },
     "/repos/{owner}/{repo}/issues": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List a repository's issues",
         "operationId": "issueListIssues",
         "parameters": [
@@ -5076,15 +4431,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Create an issue. If using deadline only the date will be taken into account, and time of day ignored.",
         "operationId": "issueCreateIssue",
         "parameters": [
@@ -5119,12 +4468,8 @@
     },
     "/repos/{owner}/{repo}/issues/comments": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List all comments in a repository",
         "operationId": "issueGetRepoComments",
         "parameters": [
@@ -5158,9 +4503,7 @@
     },
     "/repos/{owner}/{repo}/issues/comments/{id}": {
       "delete": {
-        "tags": [
-          "issue"
-        ],
+        "tags": ["issue"],
         "summary": "Delete a comment",
         "operationId": "issueDeleteComment",
         "parameters": [
@@ -5194,15 +4537,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Edit a comment",
         "operationId": "issueEditComment",
         "parameters": [
@@ -5245,12 +4582,8 @@
     },
     "/repos/{owner}/{repo}/issues/comments/{id}/assets": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List comment's attachments",
         "operationId": "issueGetCommentAttachments",
         "parameters": [
@@ -5286,12 +4619,8 @@
     },
     "/repos/{owner}/{repo}/issues/{id}/times": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List an issue's tracked times",
         "operationId": "issueTrackedTimes",
         "parameters": [
@@ -5325,15 +4654,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Add a tracked time to a issue",
         "operationId": "issueAddTime",
         "parameters": [
@@ -5382,15 +4705,9 @@
     },
     "/repos/{owner}/{repo}/issues/{id}/times/stopwatch": {
       "get": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get the stopwatch of the authenticated user for an issue",
         "operationId": "issueGetMyStopwatch",
         "parameters": [
@@ -5435,15 +4752,9 @@
     },
     "/repos/{owner}/{repo}/issues/{id}/times/stopwatch/cancel": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Cancel the stopwatch for an issue",
         "operationId": "issueCancelStopwatch",
         "parameters": [
@@ -5488,15 +4799,9 @@
     },
     "/repos/{owner}/{repo}/issues/{id}/times/stopwatch/toggle": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Create or stop a stopwatch for an issue",
         "operationId": "issueToggleStopwatch",
         "parameters": [
@@ -5541,12 +4846,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get an issue",
         "operationId": "issueGetIssue",
         "parameters": [
@@ -5580,15 +4881,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Edit an issue. If using deadline only the date will be taken into account, and time of day ignored.",
         "operationId": "issueEditIssue",
         "parameters": [
@@ -5631,12 +4926,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/assets": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List issue's attachments",
         "operationId": "issueGetAttachments",
         "parameters": [
@@ -5672,12 +4963,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/comments": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "List all comments on an issue",
         "operationId": "issueGetComments",
         "parameters": [
@@ -5723,15 +5010,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Add a comment to an issue",
         "operationId": "issueCreateComment",
         "parameters": [
@@ -5774,9 +5055,7 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/comments/{id}": {
       "delete": {
-        "tags": [
-          "issue"
-        ],
+        "tags": ["issue"],
         "summary": "Delete a comment",
         "operationId": "issueDeleteCommentDeprecated",
         "deprecated": true,
@@ -5818,15 +5097,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Edit a comment",
         "operationId": "issueEditCommentDeprecated",
         "deprecated": true,
@@ -5877,15 +5150,9 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/deadline": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Set an issue deadline. If set to null, the deadline is deleted. If using deadline only the date will be taken into account, and time of day ignored.",
         "operationId": "issueEditIssueDeadline",
         "parameters": [
@@ -5934,12 +5201,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/labels": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get an issue's labels",
         "operationId": "issueGetLabels",
         "parameters": [
@@ -5976,15 +5239,9 @@
         }
       },
       "put": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Replace an issue's labels",
         "operationId": "issueReplaceLabels",
         "parameters": [
@@ -6025,15 +5282,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Add a label to an issue",
         "operationId": "issueAddLabel",
         "parameters": [
@@ -6074,12 +5325,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Remove all labels from an issue",
         "operationId": "issueClearLabels",
         "parameters": [
@@ -6115,12 +5362,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/labels/{id}": {
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Remove a label from an issue",
         "operationId": "issueRemoveLabel",
         "parameters": [
@@ -6164,12 +5407,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/participants": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get participants of an issue",
         "operationId": "issueGetParticipants",
         "parameters": [
@@ -6205,12 +5444,8 @@
     },
     "/repos/{owner}/{repo}/issues/{index}/progress": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get the progress of the current user in solving an issue",
         "operationId": "issueGetProgress",
         "parameters": [
@@ -6247,12 +5482,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Create the progress of the current user in solving an issue",
         "operationId": "issueCreateProgress",
         "parameters": [
@@ -6295,12 +5526,8 @@
         }
       },
       "patch": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Update the progress of the current user in solving an issue",
         "operationId": "issueUpdateProgress",
         "parameters": [
@@ -6346,12 +5573,8 @@
     },
     "/repos/{owner}/{repo}/keys": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repository's keys",
         "operationId": "repoListKeys",
         "parameters": [
@@ -6389,15 +5612,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Add a key to a repository",
         "operationId": "repoCreateKey",
         "parameters": [
@@ -6432,12 +5649,8 @@
     },
     "/repos/{owner}/{repo}/keys/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a repository's key by id",
         "operationId": "repoGetKey",
         "parameters": [
@@ -6471,9 +5684,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "repository"
-        ],
+        "tags": ["repository"],
         "summary": "Delete a key from a repository",
         "operationId": "repoDeleteKey",
         "parameters": [
@@ -6509,12 +5720,8 @@
     },
     "/repos/{owner}/{repo}/labels": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get all of a repository's labels",
         "operationId": "issueListLabels",
         "parameters": [
@@ -6540,15 +5747,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Create a label",
         "operationId": "issueCreateLabel",
         "parameters": [
@@ -6583,12 +5784,8 @@
     },
     "/repos/{owner}/{repo}/labels/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get a single label",
         "operationId": "issueGetLabel",
         "parameters": [
@@ -6622,9 +5819,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "issue"
-        ],
+        "tags": ["issue"],
         "summary": "Delete a label",
         "operationId": "issueDeleteLabel",
         "parameters": [
@@ -6658,15 +5853,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Update a label",
         "operationId": "issueEditLabel",
         "parameters": [
@@ -6709,12 +5898,8 @@
     },
     "/repos/{owner}/{repo}/milestones": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get all of a repository's opened milestones",
         "operationId": "issueGetMilestonesList",
         "parameters": [
@@ -6740,15 +5925,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Create a milestone",
         "operationId": "issueCreateMilestone",
         "parameters": [
@@ -6783,12 +5962,8 @@
     },
     "/repos/{owner}/{repo}/milestones/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Get a milestone",
         "operationId": "issueGetMilestone",
         "parameters": [
@@ -6822,9 +5997,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "issue"
-        ],
+        "tags": ["issue"],
         "summary": "Delete a milestone",
         "operationId": "issueDeleteMilestone",
         "parameters": [
@@ -6858,15 +6031,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "issue"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["issue"],
         "summary": "Update a milestone",
         "operationId": "issueEditMilestone",
         "parameters": [
@@ -6909,12 +6076,8 @@
     },
     "/repos/{owner}/{repo}/mirror-sync": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Sync a mirrored repository",
         "operationId": "repoMirrorSync",
         "parameters": [
@@ -6942,12 +6105,8 @@
     },
     "/repos/{owner}/{repo}/pulls": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repo's pull requests",
         "operationId": "repoListPullRequests",
         "parameters": [
@@ -6972,11 +6131,7 @@
             "in": "query"
           },
           {
-            "enum": [
-              "closed",
-              "open",
-              "all"
-            ],
+            "enum": ["closed", "open", "all"],
             "type": "string",
             "description": "State of pull request: open or closed (optional)",
             "name": "state",
@@ -7022,15 +6177,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Create a pull request",
         "operationId": "repoCreatePullRequest",
         "parameters": [
@@ -7065,12 +6214,8 @@
     },
     "/repos/{owner}/{repo}/pulls/{index}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a pull request",
         "operationId": "repoGetPullRequest",
         "parameters": [
@@ -7104,15 +6249,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Update a pull request",
         "operationId": "repoEditPullRequest",
         "parameters": [
@@ -7155,12 +6294,8 @@
     },
     "/repos/{owner}/{repo}/pulls/{index}/charge": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repo"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repo"],
         "summary": "Create charge for the bounty solution",
         "operationId": "repoCreatePullRequestCharge",
         "parameters": [
@@ -7202,12 +6337,8 @@
     },
     "/repos/{owner}/{repo}/pulls/{index}/merge": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Check if a pull request has been merged",
         "operationId": "repoPullRequestIsMerged",
         "parameters": [
@@ -7244,12 +6375,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Merge a pull request",
         "operationId": "repoMergePullRequest",
         "parameters": [
@@ -7288,12 +6415,8 @@
     },
     "/repos/{owner}/{repo}/pulls/{index}/payment_details": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repo"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repo"],
         "summary": "Get payment details of the bounty targeted by a PR",
         "operationId": "repoGetPullRequestPaymentDetails",
         "parameters": [
@@ -7333,12 +6456,8 @@
         }
       },
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repo"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repo"],
         "summary": "Set payment details for the bounty targeted by a PR",
         "operationId": "repoPutPullRequestPaymentDetails",
         "parameters": [
@@ -7380,12 +6499,8 @@
     },
     "/repos/{owner}/{repo}/pulls/{index}/target_issue/{target}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repo"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repo"],
         "summary": "Set target issue for the PR",
         "operationId": "repoPullRequestSetTargetIssue",
         "parameters": [
@@ -7435,12 +6550,8 @@
     },
     "/repos/{owner}/{repo}/raw/{filepath}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a file from a repository",
         "operationId": "repoGetRawFile",
         "parameters": [
@@ -7475,12 +6586,8 @@
     },
     "/repos/{owner}/{repo}/releases": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repo's releases",
         "operationId": "repoListReleases",
         "parameters": [
@@ -7506,15 +6613,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Create a release",
         "operationId": "repoCreateRelease",
         "parameters": [
@@ -7549,12 +6650,8 @@
     },
     "/repos/{owner}/{repo}/releases/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a release",
         "operationId": "repoGetRelease",
         "parameters": [
@@ -7588,9 +6685,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "repository"
-        ],
+        "tags": ["repository"],
         "summary": "Delete a release",
         "operationId": "repoDeleteRelease",
         "parameters": [
@@ -7624,15 +6719,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Update a release",
         "operationId": "repoEditRelease",
         "parameters": [
@@ -7675,12 +6764,8 @@
     },
     "/repos/{owner}/{repo}/releases/{id}/assets": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List release's attachments",
         "operationId": "repoListReleaseAttachments",
         "parameters": [
@@ -7714,15 +6799,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Create a release attachment",
         "operationId": "repoCreateReleaseAttachment",
         "parameters": [
@@ -7771,12 +6850,8 @@
     },
     "/repos/{owner}/{repo}/releases/{id}/assets/{attachment_id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a release attachment",
         "operationId": "repoGetReleaseAttachment",
         "parameters": [
@@ -7818,12 +6893,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Delete a release attachment",
         "operationId": "repoDeleteReleaseAttachment",
         "parameters": [
@@ -7865,15 +6936,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Edit a release attachment",
         "operationId": "repoEditReleaseAttachment",
         "parameters": [
@@ -7924,12 +6989,8 @@
     },
     "/repos/{owner}/{repo}/stargazers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repo's stargazers",
         "operationId": "repoListStargazers",
         "parameters": [
@@ -7957,12 +7018,8 @@
     },
     "/repos/{owner}/{repo}/statuses/{sha}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a commit's statuses",
         "operationId": "repoListStatuses",
         "parameters": [
@@ -7995,12 +7052,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Create a commit status",
         "operationId": "repoCreateStatus",
         "parameters": [
@@ -8042,12 +7095,8 @@
     },
     "/repos/{owner}/{repo}/subscribers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repo's watchers",
         "operationId": "repoListSubscribers",
         "parameters": [
@@ -8075,9 +7124,7 @@
     },
     "/repos/{owner}/{repo}/subscription": {
       "get": {
-        "tags": [
-          "repository"
-        ],
+        "tags": ["repository"],
         "summary": "Check if the current user is watching a repo",
         "operationId": "userCurrentCheckSubscription",
         "parameters": [
@@ -8103,9 +7150,7 @@
         }
       },
       "put": {
-        "tags": [
-          "repository"
-        ],
+        "tags": ["repository"],
         "summary": "Watch a repo",
         "operationId": "userCurrentPutSubscription",
         "parameters": [
@@ -8131,9 +7176,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "repository"
-        ],
+        "tags": ["repository"],
         "summary": "Unwatch a repo",
         "operationId": "userCurrentDeleteSubscription",
         "parameters": [
@@ -8161,12 +7204,8 @@
     },
     "/repos/{owner}/{repo}/times": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "List a repo's tracked times",
         "operationId": "repoTrackedTimes",
         "parameters": [
@@ -8194,12 +7233,8 @@
     },
     "/repos/{owner}/{repo}/times/{user}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List a user's tracked times in a repo",
         "operationId": "userTrackedTimes",
         "parameters": [
@@ -8234,12 +7269,8 @@
     },
     "/repositories/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "Get a repository by id",
         "operationId": "repoGetByID",
         "parameters": [
@@ -8261,15 +7292,9 @@
     },
     "/requests": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Create a request",
         "operationId": "requestsCreate",
         "parameters": [
@@ -8290,15 +7315,9 @@
     },
     "/startups": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Pre-signup a startup to Algora",
         "operationId": "presignupStartup",
         "parameters": [
@@ -8322,15 +7341,9 @@
     },
     "/students": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Pre-signup a student to Algora",
         "operationId": "presignupStudent",
         "parameters": [
@@ -8354,15 +7367,9 @@
     },
     "/subscribe": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "text/html"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["text/html"],
+        "tags": ["miscellaneous"],
         "summary": "Subscribe to Algora newsletter",
         "operationId": "subscribe",
         "parameters": [
@@ -8386,12 +7393,8 @@
     },
     "/teams/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Get a team",
         "operationId": "orgGetTeam",
         "parameters": [
@@ -8411,9 +7414,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "organization"
-        ],
+        "tags": ["organization"],
         "summary": "Delete a team",
         "operationId": "orgDeleteTeam",
         "parameters": [
@@ -8433,15 +7434,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Edit a team",
         "operationId": "orgEditTeam",
         "parameters": [
@@ -8469,12 +7464,8 @@
     },
     "/teams/{id}/members": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List a team's members",
         "operationId": "orgListTeamMembersByID",
         "parameters": [
@@ -8496,12 +7487,8 @@
     },
     "/teams/{id}/members/{username}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Add a team member",
         "operationId": "orgAddTeamMember",
         "parameters": [
@@ -8528,12 +7515,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Remove a team member",
         "operationId": "orgRemoveTeamMember",
         "parameters": [
@@ -8562,12 +7545,8 @@
     },
     "/teams/{id}/repos": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List a team's repos",
         "operationId": "orgListTeamRepos",
         "parameters": [
@@ -8589,12 +7568,8 @@
     },
     "/teams/{id}/repos/{org}/{repo}": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Add a repository to a team",
         "operationId": "orgAddTeamRepository",
         "parameters": [
@@ -8629,12 +7604,8 @@
       },
       "delete": {
         "description": "This does not delete the repository, it only removes the repository from the team.",
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "Remove a repository from a team",
         "operationId": "orgRemoveTeamRepository",
         "parameters": [
@@ -8670,12 +7641,8 @@
     },
     "/topics/search": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository"
-        ],
+        "produces": ["application/json"],
+        "tags": ["repository"],
         "summary": "search topics via keyword",
         "operationId": "topicSearch",
         "parameters": [
@@ -8696,15 +7663,9 @@
     },
     "/unsubscription": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Unsubscribe from Algora emails",
         "operationId": "unsubscribe",
         "parameters": [
@@ -8728,15 +7689,9 @@
     },
     "/unsubscription/{code}": {
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Edit unsubscription",
         "operationId": "editUnsubscription",
         "parameters": [
@@ -8767,12 +7722,8 @@
     },
     "/user": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get the authenticated user",
         "operationId": "userGetCurrent",
         "responses": {
@@ -8782,15 +7733,9 @@
         }
       },
       "patch": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Edit the authenticated user",
         "operationId": "userEditCurrent",
         "parameters": [
@@ -8814,15 +7759,9 @@
     },
     "/user/avatar": {
       "patch": {
-        "consumes": [
-          "application/octet-stream"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/octet-stream"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Edit a user's avatar",
         "operationId": "userEditCurrentAvatar",
         "parameters": [
@@ -8847,12 +7786,8 @@
     },
     "/user/bank_accounts/list": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get the authenticated user's bank accounts",
         "operationId": "userCurrentGetBankAccounts",
         "responses": {
@@ -8870,12 +7805,8 @@
     },
     "/user/bank_accounts/{id}": {
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Delete a bank account of the authenticated user",
         "operationId": "userCurrentDeleteBankAccount",
         "parameters": [
@@ -8899,12 +7830,8 @@
     },
     "/user/bounties": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the bounties that the authenticated user owns",
         "operationId": "userCurrentListBounties",
         "parameters": [
@@ -8930,12 +7857,8 @@
     },
     "/user/customer_id": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get the authenticated user's customer id",
         "operationId": "userCurrentGetCustomerID",
         "responses": {
@@ -8951,15 +7874,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a customer id",
         "operationId": "userCurrentPostCustomerID",
         "responses": {
@@ -8980,12 +7897,8 @@
     },
     "/user/documents": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List documents of authenticated user",
         "operationId": "userListDocuments",
         "responses": {
@@ -8997,12 +7910,8 @@
     },
     "/user/emails": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the authenticated user's email addresses",
         "operationId": "userListEmails",
         "responses": {
@@ -9012,12 +7921,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Add email addresses",
         "operationId": "userAddEmail",
         "parameters": [
@@ -9036,12 +7941,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Delete email addresses",
         "operationId": "userDeleteEmail",
         "parameters": [
@@ -9062,12 +7963,8 @@
     },
     "/user/followers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the authenticated user's followers",
         "operationId": "userCurrentListFollowers",
         "responses": {
@@ -9079,12 +7976,8 @@
     },
     "/user/following": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the users that the authenticated user is following",
         "operationId": "userCurrentListFollowing",
         "responses": {
@@ -9096,9 +7989,7 @@
     },
     "/user/following/{username}": {
       "get": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Check whether a user is followed by the authenticated user",
         "operationId": "userCurrentCheckFollowing",
         "parameters": [
@@ -9120,9 +8011,7 @@
         }
       },
       "put": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Follow a user",
         "operationId": "userCurrentPutFollow",
         "parameters": [
@@ -9141,9 +8030,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Unfollow a user",
         "operationId": "userCurrentDeleteFollow",
         "parameters": [
@@ -9164,12 +8051,8 @@
     },
     "/user/gpg_keys": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the authenticated user's GPG keys",
         "operationId": "userCurrentListGPGKeys",
         "responses": {
@@ -9179,15 +8062,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a GPG key",
         "operationId": "userCurrentPostGPGKey",
         "parameters": [
@@ -9211,12 +8088,8 @@
     },
     "/user/gpg_keys/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a GPG key",
         "operationId": "userCurrentGetGPGKey",
         "parameters": [
@@ -9239,12 +8112,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Remove a GPG key",
         "operationId": "userCurrentDeleteGPGKey",
         "parameters": [
@@ -9269,12 +8138,8 @@
     },
     "/user/job_postings": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List the job postings of the authenticated user",
         "operationId": "orgListCurrentUserJobPostings",
         "responses": {
@@ -9286,12 +8151,8 @@
     },
     "/user/job_postings/hired": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the positions that the authenticated user is hired for",
         "operationId": "userListJobsHired",
         "responses": {
@@ -9303,12 +8164,8 @@
     },
     "/user/job_postings/hiring": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the positions that the authenticated user is hiring for",
         "operationId": "userListJobsHiring",
         "responses": {
@@ -9320,12 +8177,8 @@
     },
     "/user/keys": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the authenticated user's public keys",
         "operationId": "userCurrentListKeys",
         "parameters": [
@@ -9343,15 +8196,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a public key",
         "operationId": "userCurrentPostKey",
         "parameters": [
@@ -9375,12 +8222,8 @@
     },
     "/user/keys/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a public key",
         "operationId": "userCurrentGetKey",
         "parameters": [
@@ -9403,12 +8246,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Delete a public key",
         "operationId": "userCurrentDeleteKey",
         "parameters": [
@@ -9436,15 +8275,9 @@
     },
     "/user/link_account": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Link a bank account",
         "operationId": "userCurrentLinkAccount",
         "parameters": [
@@ -9468,21 +8301,13 @@
     },
     "/user/notifications": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the notifications belonging to the authenticated user",
         "operationId": "userCurrentListNotifications",
         "parameters": [
           {
-            "enum": [
-              "unread",
-              "read",
-              "all"
-            ],
+            "enum": ["unread", "read", "all"],
             "type": "string",
             "description": "Status of notifications to search for. Default is \"unread\". Pinned notifications are always included.",
             "name": "status",
@@ -9498,12 +8323,8 @@
     },
     "/user/oauth/stripe/state": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get OAuth state for Stripe Connect",
         "operationId": "userCurrentGetStripeConnectOAuthState",
         "responses": {
@@ -9518,15 +8339,9 @@
     },
     "/user/onboarding/profile": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Complete user onboarding for solving bounties",
         "operationId": "userCompleteOnboardingProfile",
         "parameters": [
@@ -9553,12 +8368,8 @@
     },
     "/user/onboarding_progress": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get the onboarding progress of the current user",
         "operationId": "userCurrentGetOnboardingProgress",
         "responses": {
@@ -9570,12 +8381,8 @@
     },
     "/user/orgs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List the current user's organizations",
         "operationId": "orgListCurrentUserOrgs",
         "responses": {
@@ -9587,12 +8394,8 @@
     },
     "/user/password": {
       "put": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Set password using a code",
         "operationId": "userSetPassword",
         "parameters": [
@@ -9614,12 +8417,8 @@
         }
       },
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a new password with a password reset code sent to the given email",
         "operationId": "userCreatePassword",
         "parameters": [
@@ -9646,12 +8445,8 @@
     },
     "/user/payment_methods/list/{type}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get the authenticated user's payment methods of the given type",
         "operationId": "userCurrentGetPaymentMethods",
         "parameters": [
@@ -9678,12 +8473,8 @@
     },
     "/user/payment_methods/{id}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a payment method of the authenticated user",
         "operationId": "userCurrentGetPaymentMethod",
         "parameters": [
@@ -9705,12 +8496,8 @@
         }
       },
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Delete a payment method of the authenticated user",
         "operationId": "userCurrentDeletePaymentMethod",
         "parameters": [
@@ -9734,12 +8521,8 @@
     },
     "/user/payments": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List personal and organizational payments of the authenticated user",
         "operationId": "userCurrentListPayments",
         "parameters": [
@@ -9759,15 +8542,9 @@
     },
     "/user/reg_tokens": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Add a registration token",
         "operationId": "userAddRegToken",
         "parameters": [
@@ -9794,12 +8571,8 @@
     },
     "/user/repos": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the repos that the authenticated user owns or has access to",
         "operationId": "userCurrentListRepos",
         "responses": {
@@ -9809,16 +8582,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "repository",
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["repository", "user"],
         "summary": "Create a repository",
         "operationId": "createCurrentUserRepo",
         "parameters": [
@@ -9839,15 +8605,9 @@
     },
     "/user/resume": {
       "put": {
-        "consumes": [
-          "multipart/form-data"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["multipart/form-data"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Add a resume",
         "operationId": "userAddResume",
         "parameters": [
@@ -9874,12 +8634,8 @@
     },
     "/user/session": {
       "post": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a new user session",
         "operationId": "userCreateNewSession",
         "parameters": [
@@ -9906,15 +8662,9 @@
     },
     "/user/setup_intent": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create a SetupIntent",
         "operationId": "userCurrentPostSetupIntent",
         "responses": {
@@ -9932,15 +8682,9 @@
     },
     "/user/signup": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Sign up",
         "operationId": "userSignup",
         "parameters": [
@@ -9974,15 +8718,9 @@
     },
     "/user/signup/founder": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Sign up as a founder",
         "operationId": "userSignupFounder",
         "parameters": [
@@ -10009,15 +8747,9 @@
     },
     "/user/signup/invitation/{token}": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Sign up with an invitation token",
         "operationId": "userSignupWithInvitation",
         "parameters": [
@@ -10051,15 +8783,9 @@
     },
     "/user/signup/seeded": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Sign up a seeded user",
         "operationId": "userSignupSeededUser",
         "parameters": [
@@ -10093,15 +8819,9 @@
     },
     "/user/signup/student": {
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Sign up as a student",
         "operationId": "userSignupStudent",
         "parameters": [
@@ -10128,12 +8848,8 @@
     },
     "/user/starred": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "The repos that the authenticated user has starred",
         "operationId": "userCurrentListStarred",
         "responses": {
@@ -10145,9 +8861,7 @@
     },
     "/user/starred/{owner}/{repo}": {
       "get": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Whether the authenticated is starring the repo",
         "operationId": "userCurrentCheckStarring",
         "parameters": [
@@ -10176,9 +8890,7 @@
         }
       },
       "put": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Star the given repo",
         "operationId": "userCurrentPutStar",
         "parameters": [
@@ -10204,9 +8916,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Unstar the given repo",
         "operationId": "userCurrentDeleteStar",
         "parameters": [
@@ -10234,12 +8944,8 @@
     },
     "/user/stats": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a collection of statistics for the authenticated user",
         "operationId": "userCurrentGetStats",
         "responses": {
@@ -10251,12 +8957,8 @@
     },
     "/user/subscriptions": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List repositories watched by the authenticated user",
         "operationId": "userCurrentListSubscriptions",
         "responses": {
@@ -10268,12 +8970,8 @@
     },
     "/user/times": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the current user's tracked times",
         "operationId": "userCurrentTrackedTimes",
         "responses": {
@@ -10285,15 +8983,9 @@
     },
     "/user/workspace/{id}": {
       "put": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Set the current workspace of the authenticated user",
         "operationId": "userSetWorkspace",
         "responses": {
@@ -10308,12 +9000,8 @@
     },
     "/users": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List users",
         "operationId": "userList",
         "responses": {
@@ -10325,12 +9013,8 @@
     },
     "/users/search": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Search for users",
         "operationId": "userSearch",
         "parameters": [
@@ -10382,9 +9066,7 @@
     },
     "/users/{follower}/following/{followee}": {
       "get": {
-        "tags": [
-          "user"
-        ],
+        "tags": ["user"],
         "summary": "Check if one user is following another user",
         "operationId": "userCheckFollowing",
         "parameters": [
@@ -10415,12 +9097,8 @@
     },
     "/users/{username}": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a user",
         "operationId": "userGet",
         "parameters": [
@@ -10444,12 +9122,8 @@
     },
     "/users/{username}/collabs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List a user's collaborations",
         "operationId": "userListCollabs",
         "parameters": [
@@ -10470,12 +9144,8 @@
     },
     "/users/{username}/followers": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the given user's followers",
         "operationId": "userListFollowers",
         "parameters": [
@@ -10496,12 +9166,8 @@
     },
     "/users/{username}/following": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the users that the given user is following",
         "operationId": "userListFollowing",
         "parameters": [
@@ -10522,12 +9188,8 @@
     },
     "/users/{username}/gpg_keys": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the given user's GPG keys",
         "operationId": "userListGPGKeys",
         "parameters": [
@@ -10548,12 +9210,8 @@
     },
     "/users/{username}/heatmap": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Get a user's heatmap",
         "operationId": "userGetHeatmapData",
         "parameters": [
@@ -10577,12 +9235,8 @@
     },
     "/users/{username}/keys": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the given user's public keys",
         "operationId": "userListKeys",
         "parameters": [
@@ -10609,12 +9263,8 @@
     },
     "/users/{username}/orgs": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "organization"
-        ],
+        "produces": ["application/json"],
+        "tags": ["organization"],
         "summary": "List a user's organizations",
         "operationId": "orgListUserOrgs",
         "parameters": [
@@ -10635,12 +9285,8 @@
     },
     "/users/{username}/repos": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the repos owned by the given user",
         "operationId": "userListRepos",
         "parameters": [
@@ -10661,12 +9307,8 @@
     },
     "/users/{username}/starred": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "The repos that the given user has starred",
         "operationId": "userListStarred",
         "parameters": [
@@ -10687,12 +9329,8 @@
     },
     "/users/{username}/subscriptions": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the repositories watched by a user",
         "operationId": "userListSubscriptions",
         "parameters": [
@@ -10713,12 +9351,8 @@
     },
     "/users/{username}/tokens": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "List the authenticated user's access tokens",
         "operationId": "userGetTokens",
         "parameters": [
@@ -10737,15 +9371,9 @@
         }
       },
       "post": {
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "Create an access token",
         "operationId": "userCreateToken",
         "parameters": [
@@ -10762,9 +9390,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "name"
-              ],
+              "required": ["name"],
               "properties": {
                 "name": {
                   "type": "string"
@@ -10782,12 +9408,8 @@
     },
     "/users/{username}/tokens/{token}": {
       "delete": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "user"
-        ],
+        "produces": ["application/json"],
+        "tags": ["user"],
         "summary": "delete an access token",
         "operationId": "userDeleteAccessToken",
         "parameters": [
@@ -10816,12 +9438,8 @@
     },
     "/version": {
       "get": {
-        "produces": [
-          "application/json"
-        ],
-        "tags": [
-          "miscellaneous"
-        ],
+        "produces": ["application/json"],
+        "tags": ["miscellaneous"],
         "summary": "Returns the version of the Gitea application",
         "operationId": "getVersion",
         "responses": {
@@ -10859,11 +9477,7 @@
       "properties": {
         "permission": {
           "type": "string",
-          "enum": [
-            "read",
-            "write",
-            "admin"
-          ],
+          "enum": ["read", "write", "admin"],
           "x-go-name": "Permission"
         }
       },
@@ -10872,11 +9486,7 @@
     "AddEducationOption": {
       "description": "AddEducationOption add education options",
       "type": "object",
-      "required": [
-        "institution",
-        "degree",
-        "fields"
-      ],
+      "required": ["institution", "degree", "fields"],
       "properties": {
         "activities": {
           "type": "string",
@@ -10926,10 +9536,7 @@
     "AddExperienceOption": {
       "description": "AddExperienceOption add experience options",
       "type": "object",
-      "required": [
-        "organization",
-        "title"
-      ],
+      "required": ["organization", "title"],
       "properties": {
         "description": {
           "type": "string",
@@ -10965,9 +9572,7 @@
     "AddJobCandidatesOption": {
       "description": "AddJobCandidatesOption options for adding candidates to a job posting",
       "type": "object",
-      "required": [
-        "emails"
-      ],
+      "required": ["emails"],
       "properties": {
         "emails": {
           "type": "array",
@@ -10981,9 +9586,7 @@
     },
     "AddProjectContributorOption": {
       "type": "object",
-      "required": [
-        "reward"
-      ],
+      "required": ["reward"],
       "properties": {
         "reward": {
           "type": "integer",
@@ -10996,9 +9599,7 @@
     "AddTimeOption": {
       "description": "AddTimeOption options for adding time to an issue",
       "type": "object",
-      "required": [
-        "time"
-      ],
+      "required": ["time"],
       "properties": {
         "time": {
           "description": "time in seconds",
@@ -11012,11 +9613,7 @@
     "AdminCreateUserOption": {
       "description": "AdminCreateUserOption create user options",
       "type": "object",
-      "required": [
-        "username",
-        "email",
-        "password"
-      ],
+      "required": ["username", "email", "password"],
       "properties": {
         "email": {
           "type": "string",
@@ -11029,10 +9626,7 @@
         },
         "kind": {
           "type": "string",
-          "enum": [
-            "founder",
-            "student"
-          ],
+          "enum": ["founder", "student"],
           "x-go-name": "Kind"
         },
         "login_name": {
@@ -11062,9 +9656,7 @@
     "AdminEditUserOption": {
       "description": "AdminEditUserOption edit user options",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "active": {
           "type": "boolean",
@@ -11272,10 +9864,7 @@
     },
     "ApplyToJobOption": {
       "type": "object",
-      "required": [
-        "full_name",
-        "tech_stack"
-      ],
+      "required": ["full_name", "tech_stack"],
       "properties": {
         "full_name": {
           "type": "string",
@@ -11350,14 +9939,7 @@
     "BankAccount": {
       "description": "BankAccount represents a bank account",
       "type": "object",
-      "required": [
-        "object",
-        "id",
-        "currency",
-        "bank_name",
-        "last4",
-        "status"
-      ],
+      "required": ["object", "id", "currency", "bank_name", "last4", "status"],
       "properties": {
         "bank_name": {
           "type": "string",
@@ -11377,9 +9959,7 @@
         },
         "object": {
           "type": "string",
-          "enum": [
-            "bank_account"
-          ],
+          "enum": ["bank_account"],
           "x-go-name": "Object"
         },
         "status": {
@@ -11490,10 +10070,7 @@
         },
         "state": {
           "type": "string",
-          "enum": [
-            "open",
-            "closed"
-          ],
+          "enum": ["open", "closed"],
           "x-go-name": "State"
         },
         "title": {
@@ -11513,12 +10090,7 @@
     "BountyCandidate": {
       "description": "BountyCandidate represents a candidate for a bounty",
       "type": "object",
-      "required": [
-        "id",
-        "email",
-        "status",
-        "created_at"
-      ],
+      "required": ["id", "email", "status", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -11537,11 +10109,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "invited",
-            "accepted",
-            "applied"
-          ],
+          "enum": ["invited", "accepted", "applied"],
           "x-go-name": "Status"
         },
         "user": {
@@ -11553,9 +10121,7 @@
     "BountyMeta": {
       "description": "BountyMeta bounty info if an issue is a bounty",
       "type": "object",
-      "required": [
-        "reward"
-      ],
+      "required": ["reward"],
       "properties": {
         "reward": {
           "$ref": "#/definitions/PaymentAmount"
@@ -11566,12 +10132,7 @@
     "BountySolutionProgress": {
       "description": "BountySolutionProgress represents the progress of a user in solving a bounty",
       "type": "object",
-      "required": [
-        "cloned",
-        "pushed",
-        "set_up_account",
-        "created_at"
-      ],
+      "required": ["cloned", "pushed", "set_up_account", "created_at"],
       "properties": {
         "cloned": {
           "type": "boolean",
@@ -11616,12 +10177,7 @@
     "Business": {
       "description": "Business represents a business",
       "type": "object",
-      "required": [
-        "id",
-        "type",
-        "tech_stack",
-        "address"
-      ],
+      "required": ["id", "type", "tech_stack", "address"],
       "properties": {
         "address": {
           "type": "string",
@@ -11649,10 +10205,7 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "company",
-            "individual"
-          ],
+          "enum": ["company", "individual"],
           "x-go-name": "Type"
         }
       },
@@ -11660,12 +10213,7 @@
     },
     "Card": {
       "type": "object",
-      "required": [
-        "last4",
-        "exp_month",
-        "exp_year",
-        "brand"
-      ],
+      "required": ["last4", "exp_month", "exp_year", "brand"],
       "properties": {
         "brand": {
           "type": "string",
@@ -11701,12 +10249,7 @@
     "CardPaymentMethod": {
       "description": "CardPaymentMethod represents a card payment method",
       "type": "object",
-      "required": [
-        "object",
-        "type",
-        "id",
-        "card"
-      ],
+      "required": ["object", "type", "id", "card"],
       "properties": {
         "card": {
           "$ref": "#/definitions/Card"
@@ -11717,16 +10260,12 @@
         },
         "object": {
           "type": "string",
-          "enum": [
-            "payment_method"
-          ],
+          "enum": ["payment_method"],
           "x-go-name": "Object"
         },
         "type": {
           "type": "string",
-          "enum": [
-            "card"
-          ],
+          "enum": ["card"],
           "x-go-name": "Type"
         }
       },
@@ -11735,17 +10274,11 @@
     "Charge": {
       "description": "Charge represents a charge",
       "type": "object",
-      "required": [
-        "status"
-      ],
+      "required": ["status"],
       "properties": {
         "status": {
           "type": "string",
-          "enum": [
-            "pending",
-            "succeeded",
-            "failed"
-          ],
+          "enum": ["pending", "succeeded", "failed"],
           "x-go-name": "Status"
         }
       },
@@ -11754,11 +10287,7 @@
     "ClaimProfileOption": {
       "description": "ClaimProfileOption claim account options",
       "type": "object",
-      "required": [
-        "username",
-        "email",
-        "password"
-      ],
+      "required": ["username", "email", "password"],
       "properties": {
         "email": {
           "type": "string",
@@ -11923,9 +10452,7 @@
     "CreateBountyOption": {
       "description": "CreateBountyOption options to create bounty",
       "type": "object",
-      "required": [
-        "reward"
-      ],
+      "required": ["reward"],
       "properties": {
         "reward": {
           "type": "integer",
@@ -11952,11 +10479,7 @@
     "CreateBusinessOption": {
       "description": "CreateBusinessOption options for creating a business",
       "type": "object",
-      "required": [
-        "type",
-        "tech_stack",
-        "address"
-      ],
+      "required": ["type", "tech_stack", "address"],
       "properties": {
         "address": {
           "type": "string",
@@ -11984,10 +10507,7 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "company",
-            "individual"
-          ],
+          "enum": ["company", "individual"],
           "x-go-name": "Type"
         }
       },
@@ -12047,12 +10567,7 @@
     "CreateEmailOption": {
       "description": "CreateEmailOption options when creating emails",
       "type": "object",
-      "required": [
-        "from",
-        "to",
-        "template",
-        "subject"
-      ],
+      "required": ["from", "to", "template", "subject"],
       "properties": {
         "data": {
           "type": "object",
@@ -12088,10 +10603,7 @@
     "CreateEntityOption": {
       "description": "CreateEntityOption options for creating entity",
       "type": "object",
-      "required": [
-        "name",
-        "type"
-      ],
+      "required": ["name", "type"],
       "properties": {
         "id": {
           "type": "integer",
@@ -12192,9 +10704,7 @@
     "CreateGPGKeyOption": {
       "description": "CreateGPGKeyOption options create user GPG key",
       "type": "object",
-      "required": [
-        "armored_public_key"
-      ],
+      "required": ["armored_public_key"],
       "properties": {
         "armored_public_key": {
           "description": "An armored GPG key to add",
@@ -12208,10 +10718,7 @@
     "CreateHookOption": {
       "description": "CreateHookOption options when create a hook",
       "type": "object",
-      "required": [
-        "type",
-        "config"
-      ],
+      "required": ["type", "config"],
       "properties": {
         "active": {
           "type": "boolean",
@@ -12234,12 +10741,7 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "gitea",
-            "gogs",
-            "slack",
-            "discord"
-          ],
+          "enum": ["gitea", "gogs", "slack", "discord"],
           "x-go-name": "Type"
         }
       },
@@ -12248,9 +10750,7 @@
     "CreateInstOption": {
       "description": "CreateInstOption options for creating an institution",
       "type": "object",
-      "required": [
-        "username"
-      ],
+      "required": ["username"],
       "properties": {
         "description": {
           "type": "string",
@@ -12278,9 +10778,7 @@
     "CreateInterviewOption": {
       "description": "CreateInterviewOption options for creating an interview",
       "type": "object",
-      "required": [
-        "title"
-      ],
+      "required": ["title"],
       "properties": {
         "description": {
           "type": "string",
@@ -12300,9 +10798,7 @@
     "CreateIssueCommentOption": {
       "description": "CreateIssueCommentOption options for creating a comment on an issue",
       "type": "object",
-      "required": [
-        "body"
-      ],
+      "required": ["body"],
       "properties": {
         "body": {
           "type": "string",
@@ -12314,9 +10810,7 @@
     "CreateIssueOption": {
       "description": "CreateIssueOption options to create one issue",
       "type": "object",
-      "required": [
-        "title"
-      ],
+      "required": ["title"],
       "properties": {
         "assignee": {
           "description": "username of assignee",
@@ -12368,9 +10862,7 @@
     "CreateJobPostingOption": {
       "description": "CreateJobPostingOption options for creating a job posting",
       "type": "object",
-      "required": [
-        "title"
-      ],
+      "required": ["title"],
       "properties": {
         "description": {
           "type": "string",
@@ -12409,10 +10901,7 @@
     "CreateKeyOption": {
       "description": "CreateKeyOption options when creating a key",
       "type": "object",
-      "required": [
-        "title",
-        "key"
-      ],
+      "required": ["title", "key"],
       "properties": {
         "key": {
           "description": "An armored SSH key to add",
@@ -12437,10 +10926,7 @@
     "CreateLabelOption": {
       "description": "CreateLabelOption options for creating a label",
       "type": "object",
-      "required": [
-        "name",
-        "color"
-      ],
+      "required": ["name", "color"],
       "properties": {
         "color": {
           "type": "string",
@@ -12481,9 +10967,7 @@
     "CreateOrgOption": {
       "description": "CreateOrgOption options for creating an organization",
       "type": "object",
-      "required": [
-        "username"
-      ],
+      "required": ["username"],
       "properties": {
         "description": {
           "type": "string",
@@ -12518,9 +11002,7 @@
     "CreatePasswordOption": {
       "description": "CreatePasswordOption",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "email": {
           "type": "string",
@@ -12532,9 +11014,7 @@
     "CreatePreOrgOption": {
       "description": "CreatePreOrgOption options for creating a pre-org",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "alma_mater": {
           "type": "string",
@@ -12583,12 +11063,7 @@
     },
     "CreateProjectOption": {
       "type": "object",
-      "required": [
-        "name",
-        "display_name",
-        "synopsis",
-        "description"
-      ],
+      "required": ["name", "display_name", "synopsis", "description"],
       "properties": {
         "description": {
           "type": "string",
@@ -12618,13 +11093,7 @@
     },
     "CreateProjectSprintOption": {
       "type": "object",
-      "required": [
-        "module",
-        "name",
-        "estimated_time",
-        "budget",
-        "currency"
-      ],
+      "required": ["module", "name", "estimated_time", "budget", "currency"],
       "properties": {
         "budget": {
           "type": "integer",
@@ -12706,9 +11175,7 @@
     "CreateRegTokenOption": {
       "description": "CreateRegTokenOption options when creating a user registration token",
       "type": "object",
-      "required": [
-        "token"
-      ],
+      "required": ["token"],
       "properties": {
         "token": {
           "description": "A registration token to add",
@@ -12722,9 +11189,7 @@
     "CreateReleaseOption": {
       "description": "CreateReleaseOption options when creating a release",
       "type": "object",
-      "required": [
-        "tag_name"
-      ],
+      "required": ["tag_name"],
       "properties": {
         "body": {
           "type": "string",
@@ -12756,9 +11221,7 @@
     "CreateRepoOption": {
       "description": "CreateRepoOption options when creating repository",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "auto_init": {
           "description": "Whether the repository should be auto-intialized?",
@@ -12810,10 +11273,7 @@
     "CreateRequestOption": {
       "description": "CreateRequestOption options for creating a request",
       "type": "object",
-      "required": [
-        "method",
-        "path"
-      ],
+      "required": ["method", "path"],
       "properties": {
         "method": {
           "type": "string",
@@ -12829,13 +11289,7 @@
     "CreateSeededUserOption": {
       "description": "CreateSeededUserOption create user options",
       "type": "object",
-      "required": [
-        "username",
-        "email",
-        "password",
-        "kind",
-        "seed"
-      ],
+      "required": ["username", "email", "password", "kind", "seed"],
       "properties": {
         "email": {
           "type": "string",
@@ -12865,10 +11319,7 @@
     "CreateSessionOption": {
       "description": "CreateSessionOption",
       "type": "object",
-      "required": [
-        "user_name",
-        "password"
-      ],
+      "required": ["user_name", "password"],
       "properties": {
         "password": {
           "type": "string",
@@ -12910,12 +11361,7 @@
     "CreateStudentOption": {
       "description": "CreateStudentOption create student options",
       "type": "object",
-      "required": [
-        "username",
-        "email",
-        "password",
-        "tech_stack"
-      ],
+      "required": ["username", "email", "password", "tech_stack"],
       "properties": {
         "alma_mater": {
           "type": "string",
@@ -12963,9 +11409,7 @@
     "CreateTeamOption": {
       "description": "CreateTeamOption options for creating a team",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "description": {
           "type": "string",
@@ -12977,11 +11421,7 @@
         },
         "permission": {
           "type": "string",
-          "enum": [
-            "read",
-            "write",
-            "admin"
-          ],
+          "enum": ["read", "write", "admin"],
           "x-go-name": "Permission"
         },
         "units": {
@@ -12997,12 +11437,7 @@
     "CreateUserOption": {
       "description": "CreateUserOption create user options",
       "type": "object",
-      "required": [
-        "username",
-        "email",
-        "password",
-        "kind"
-      ],
+      "required": ["username", "email", "password", "kind"],
       "properties": {
         "email": {
           "type": "string",
@@ -13163,10 +11598,7 @@
     "EditBountyOption": {
       "description": "EditBountyOption options to edit bounty",
       "type": "object",
-      "required": [
-        "payment_type",
-        "payment_source_id"
-      ],
+      "required": ["payment_type", "payment_source_id"],
       "properties": {
         "payment_source_id": {
           "type": "string",
@@ -13174,13 +11606,7 @@
         },
         "payment_type": {
           "type": "string",
-          "enum": [
-            "card",
-            "fpx",
-            "ideal",
-            "sepa_debit",
-            "ach_debit"
-          ],
+          "enum": ["card", "fpx", "ideal", "sepa_debit", "ach_debit"],
           "x-go-name": "PaymentType"
         }
       },
@@ -13189,9 +11615,7 @@
     "EditDeadlineOption": {
       "description": "EditDeadlineOption options for creating a deadline",
       "type": "object",
-      "required": [
-        "due_date"
-      ],
+      "required": ["due_date"],
       "properties": {
         "due_date": {
           "type": "string",
@@ -13229,9 +11653,7 @@
     "EditIssueCommentOption": {
       "description": "EditIssueCommentOption options for editing a comment",
       "type": "object",
-      "required": [
-        "body"
-      ],
+      "required": ["body"],
       "properties": {
         "body": {
           "type": "string",
@@ -13271,10 +11693,7 @@
         },
         "state": {
           "type": "string",
-          "enum": [
-            "open",
-            "closed"
-          ],
+          "enum": ["open", "closed"],
           "x-go-name": "State"
         },
         "title": {
@@ -13494,9 +11913,7 @@
     "EditTeamOption": {
       "description": "EditTeamOption options for editing a team",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "description": {
           "type": "string",
@@ -13508,11 +11925,7 @@
         },
         "permission": {
           "type": "string",
-          "enum": [
-            "read",
-            "write",
-            "admin"
-          ],
+          "enum": ["read", "write", "admin"],
           "x-go-name": "Permission"
         },
         "units": {
@@ -13528,9 +11941,7 @@
     "EditUnsubscriptionOption": {
       "description": "EditUnsubscriptionOption edit unsubscription options",
       "type": "object",
-      "required": [
-        "reason"
-      ],
+      "required": ["reason"],
       "properties": {
         "reason": {
           "type": "string",
@@ -13592,13 +12003,7 @@
     "Education": {
       "type": "object",
       "title": "Education is an education section belonging to a user.",
-      "required": [
-        "id",
-        "institution",
-        "degree",
-        "fields",
-        "graduated"
-      ],
+      "required": ["id", "institution", "degree", "fields", "graduated"],
       "properties": {
         "activities": {
           "type": "string",
@@ -14246,12 +12651,7 @@
     "Interview": {
       "description": "Interview represents a job interview",
       "type": "object",
-      "required": [
-        "id",
-        "title",
-        "reward",
-        "created_at"
-      ],
+      "required": ["id", "title", "reward", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -14284,9 +12684,7 @@
     "InviteSolverOption": {
       "description": "InviteSolverOption options to invite a solver to a bounty",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "email": {
           "type": "string",
@@ -14299,9 +12697,7 @@
     "InviteeActivity": {
       "description": "InviteeActivity represents the activity of a invitee",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "email": {
           "type": "string",
@@ -14398,10 +12794,7 @@
         "state": {
           "description": "Whether the issue is open or closed",
           "type": "string",
-          "enum": [
-            "open",
-            "closed"
-          ],
+          "enum": ["open", "closed"],
           "x-go-name": "State"
         },
         "title": {
@@ -14454,11 +12847,7 @@
     "IssueSolutionProgress": {
       "description": "IssueSolutionProgress represents the progress of a user in solving an issue",
       "type": "object",
-      "required": [
-        "cloned",
-        "pushed",
-        "created_at"
-      ],
+      "required": ["cloned", "pushed", "created_at"],
       "properties": {
         "cloned": {
           "type": "boolean",
@@ -14485,12 +12874,7 @@
     "JobCandidate": {
       "description": "JobCandidate represents a candidate for a job posting",
       "type": "object",
-      "required": [
-        "id",
-        "email",
-        "status",
-        "created_at"
-      ],
+      "required": ["id", "email", "status", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -14509,11 +12893,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "invited",
-            "accepted",
-            "applied"
-          ],
+          "enum": ["invited", "accepted", "applied"],
           "x-go-name": "Status"
         },
         "user": {
@@ -14598,10 +12978,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "screening",
-            "active"
-          ],
+          "enum": ["screening", "active"],
           "x-go-name": "Status"
         },
         "tech_stack": {
@@ -14691,12 +13068,7 @@
     "Label": {
       "description": "Label a label to an issue or a pr",
       "type": "object",
-      "required": [
-        "id",
-        "name",
-        "color",
-        "url"
-      ],
+      "required": ["id", "name", "color", "url"],
       "properties": {
         "color": {
           "type": "string",
@@ -14837,11 +13209,7 @@
         },
         "show_tag": {
           "type": "string",
-          "enum": [
-            "none",
-            "writer",
-            "owner"
-          ],
+          "enum": ["none", "writer", "owner"],
           "x-go-name": "ShowTag"
         },
         "uuid": {
@@ -14854,10 +13222,7 @@
     "Metrics": {
       "description": "Metrics represents the platform metrics",
       "type": "object",
-      "required": [
-        "active_users",
-        "active_users_last_month"
-      ],
+      "required": ["active_users", "active_users_last_month"],
       "properties": {
         "active_users": {
           "type": "integer",
@@ -14875,11 +13240,7 @@
     "MigrateRepoForm": {
       "description": "MigrateRepoForm form for migrating repository",
       "type": "object",
-      "required": [
-        "clone_addr",
-        "uid",
-        "repo_name"
-      ],
+      "required": ["clone_addr", "uid", "repo_name"],
       "properties": {
         "auth_password": {
           "type": "string",
@@ -14960,10 +13321,7 @@
         },
         "state": {
           "type": "string",
-          "enum": [
-            "open",
-            "closed"
-          ],
+          "enum": ["open", "closed"],
           "x-go-name": "State"
         },
         "title": {
@@ -15012,22 +13370,12 @@
         },
         "source": {
           "type": "string",
-          "enum": [
-            "issue",
-            "pull",
-            "commit",
-            "bounty",
-            "platform"
-          ],
+          "enum": ["issue", "pull", "commit", "bounty", "platform"],
           "x-go-name": "Source"
         },
         "status": {
           "type": "string",
-          "enum": [
-            "unread",
-            "read",
-            "pinned"
-          ],
+          "enum": ["unread", "read", "pinned"],
           "x-go-name": "Status"
         },
         "updated_at": {
@@ -15096,9 +13444,7 @@
     "OrgMember": {
       "description": "OrgMember represents an organization member",
       "type": "object",
-      "required": [
-        "user"
-      ],
+      "required": ["user"],
       "properties": {
         "position": {
           "type": "string",
@@ -15112,10 +13458,7 @@
     },
     "OrgOnboarding": {
       "type": "object",
-      "required": [
-        "create_bounties",
-        "create_jobs"
-      ],
+      "required": ["create_bounties", "create_jobs"],
       "properties": {
         "create_bounties": {
           "type": "boolean",
@@ -15184,13 +13527,7 @@
     "PRBranchInfo": {
       "description": "PRBranchInfo information about a branch",
       "type": "object",
-      "required": [
-        "label",
-        "ref",
-        "sha",
-        "repo_id",
-        "repo"
-      ],
+      "required": ["label", "ref", "sha", "repo_id", "repo"],
       "properties": {
         "label": {
           "type": "string",
@@ -15296,13 +13633,7 @@
     "Payment": {
       "description": "Payment represents a bounty payment made by a user",
       "type": "object",
-      "required": [
-        "id",
-        "status",
-        "bounty",
-        "pull_request",
-        "created_at"
-      ],
+      "required": ["id", "status", "bounty", "pull_request", "created_at"],
       "properties": {
         "bounty": {
           "$ref": "#/definitions/Bounty"
@@ -15322,12 +13653,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "none",
-            "processing",
-            "succeeded",
-            "failed"
-          ],
+          "enum": ["none", "processing", "succeeded", "failed"],
           "x-go-name": "Status"
         }
       },
@@ -15379,11 +13705,7 @@
     "Permission": {
       "description": "Permission represents a set of permissions",
       "type": "object",
-      "required": [
-        "admin",
-        "push",
-        "pull"
-      ],
+      "required": ["admin", "push", "pull"],
       "properties": {
         "admin": {
           "type": "boolean",
@@ -15403,14 +13725,7 @@
     "PreOrg": {
       "description": "PreOrg represents a pre-org",
       "type": "object",
-      "required": [
-        "id",
-        "org",
-        "avatar",
-        "members",
-        "jobs",
-        "created_at"
-      ],
+      "required": ["id", "org", "avatar", "members", "jobs", "created_at"],
       "properties": {
         "avatar": {
           "type": "string",
@@ -15448,9 +13763,7 @@
     },
     "PreOrgJob": {
       "type": "object",
-      "required": [
-        "title"
-      ],
+      "required": ["title"],
       "properties": {
         "description": {
           "type": "string",
@@ -15472,11 +13785,7 @@
     },
     "PreOrgMember": {
       "type": "object",
-      "required": [
-        "name",
-        "full_name",
-        "email"
-      ],
+      "required": ["name", "full_name", "email"],
       "properties": {
         "alma_mater": {
           "type": "string",
@@ -15512,12 +13821,7 @@
     "PreUserStartup": {
       "description": "PreUserStartup represents a startup who has requested access on Algora",
       "type": "object",
-      "required": [
-        "id",
-        "name",
-        "tech",
-        "startup_url"
-      ],
+      "required": ["id", "name", "tech", "startup_url"],
       "properties": {
         "id": {
           "type": "integer",
@@ -15639,12 +13943,7 @@
     },
     "ProjectContributor": {
       "type": "object",
-      "required": [
-        "user",
-        "position",
-        "reward",
-        "created_at"
-      ],
+      "required": ["user", "position", "reward", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -15666,10 +13965,7 @@
     },
     "ProjectMilestone": {
       "type": "object",
-      "required": [
-        "content",
-        "created_at"
-      ],
+      "required": ["content", "created_at"],
       "properties": {
         "completed_at": {
           "type": "string",
@@ -15727,12 +14023,7 @@
         },
         "status": {
           "type": "string",
-          "enum": [
-            "none",
-            "processing",
-            "succeeded",
-            "failed"
-          ],
+          "enum": ["none", "processing", "succeeded", "failed"],
           "x-go-name": "Status"
         },
         "user": {
@@ -15972,12 +14263,7 @@
         },
         "payment_status": {
           "type": "string",
-          "enum": [
-            "processing",
-            "succeeded",
-            "failed",
-            "none"
-          ],
+          "enum": ["processing", "succeeded", "failed", "none"],
           "x-go-name": "PaymentStatus"
         },
         "repo": {
@@ -15985,10 +14271,7 @@
         },
         "state": {
           "type": "string",
-          "enum": [
-            "open",
-            "closed"
-          ],
+          "enum": ["open", "closed"],
           "x-go-name": "State"
         },
         "target_issue": {
@@ -16016,9 +14299,7 @@
     "PullRequestMeta": {
       "description": "PullRequestMeta PR info if an issue is a PR",
       "type": "object",
-      "required": [
-        "merged"
-      ],
+      "required": ["merged"],
       "properties": {
         "merged": {
           "type": "boolean",
@@ -16203,10 +14484,7 @@
     "RenderEmailOption": {
       "description": "RenderEmailOption options when creating emails",
       "type": "object",
-      "required": [
-        "to",
-        "template"
-      ],
+      "required": ["to", "template"],
       "properties": {
         "data": {
           "type": "object",
@@ -16397,13 +14675,7 @@
     },
     "Request": {
       "type": "object",
-      "required": [
-        "id",
-        "method",
-        "path",
-        "user_agent",
-        "created_at"
-      ],
+      "required": ["id", "method", "path", "user_agent", "created_at"],
       "properties": {
         "browser": {
           "type": "string",
@@ -16470,9 +14742,7 @@
     "SendJobDigestEmailOption": {
       "description": "SendJobDigestEmailOption options for sending a job digest email",
       "type": "object",
-      "required": [
-        "usernames"
-      ],
+      "required": ["usernames"],
       "properties": {
         "usernames": {
           "type": "array",
@@ -16498,10 +14768,7 @@
     "SetPasswordOption": {
       "description": "SetPasswordOption",
       "type": "object",
-      "required": [
-        "code",
-        "password"
-      ],
+      "required": ["code", "password"],
       "properties": {
         "code": {
           "type": "string",
@@ -16517,19 +14784,11 @@
     "SolutionProgress": {
       "description": "SolutionProgress represents the progress of solving a bounty",
       "type": "object",
-      "required": [
-        "access_mode"
-      ],
+      "required": ["access_mode"],
       "properties": {
         "access_mode": {
           "type": "string",
-          "enum": [
-            "none",
-            "read",
-            "write",
-            "admin",
-            "owner"
-          ],
+          "enum": ["none", "read", "write", "admin", "owner"],
           "x-go-name": "AccessMode"
         },
         "progress": {
@@ -16583,10 +14842,7 @@
     },
     "SponsorProjectOption": {
       "type": "object",
-      "required": [
-        "type",
-        "source_id"
-      ],
+      "required": ["type", "source_id"],
       "properties": {
         "source_id": {
           "type": "string",
@@ -16594,9 +14850,7 @@
         },
         "type": {
           "type": "string",
-          "enum": [
-            "card"
-          ],
+          "enum": ["card"],
           "x-go-name": "Type"
         }
       },
@@ -16631,12 +14885,7 @@
     "StartupPreSignupOption": {
       "description": "StartupPreSignupOption pre-signup options",
       "type": "object",
-      "required": [
-        "name",
-        "email",
-        "tech",
-        "startup_url"
-      ],
+      "required": ["name", "email", "tech", "startup_url"],
       "properties": {
         "email": {
           "type": "string",
@@ -16729,12 +14978,7 @@
     "Stopwatch": {
       "type": "object",
       "title": "Stopwatch represents a stopwatch for time tracking.",
-      "required": [
-        "id",
-        "issue_id",
-        "user_id",
-        "created_at"
-      ],
+      "required": ["id", "issue_id", "user_id", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -16835,9 +15079,7 @@
     "SubscribeOption": {
       "description": "SubscribeOption subscriber options",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "email": {
           "type": "string",
@@ -16870,9 +15112,7 @@
     "Subscriber": {
       "description": "Subscriber represents a subscriber",
       "type": "object",
-      "required": [
-        "email"
-      ],
+      "required": ["email"],
       "properties": {
         "email": {
           "type": "string",
@@ -16905,11 +15145,7 @@
     "Subscription": {
       "description": "Subscription represents an subscription",
       "type": "object",
-      "required": [
-        "id",
-        "status",
-        "created_at"
-      ],
+      "required": ["id", "status", "created_at"],
       "properties": {
         "created_at": {
           "type": "string",
@@ -16969,13 +15205,7 @@
         },
         "permission": {
           "type": "string",
-          "enum": [
-            "none",
-            "read",
-            "write",
-            "admin",
-            "owner"
-          ],
+          "enum": ["none", "read", "write", "admin", "owner"],
           "x-go-name": "Permission"
         },
         "units": {
@@ -16997,14 +15227,7 @@
     "TrackedTime": {
       "description": "TrackedTime worked time for an issue / pr",
       "type": "object",
-      "required": [
-        "id",
-        "created",
-        "time",
-        "user_id",
-        "user",
-        "issue_id"
-      ],
+      "required": ["id", "created", "time", "user_id", "user", "issue_id"],
       "properties": {
         "created": {
           "type": "string",
@@ -17041,9 +15264,7 @@
     "UnsubscribeOption": {
       "description": "UnsubscribeOption unsubscribe options",
       "type": "object",
-      "required": [
-        "code"
-      ],
+      "required": ["code"],
       "properties": {
         "code": {
           "type": "string",
@@ -17055,10 +15276,7 @@
     "UpdateProgressOption": {
       "description": "UpdateProgressOption options to update bounty solution progress",
       "type": "object",
-      "required": [
-        "cloned",
-        "pushed"
-      ],
+      "required": ["cloned", "pushed"],
       "properties": {
         "cloned": {
           "type": "boolean",
@@ -17222,10 +15440,7 @@
     "UserHeatmapData": {
       "description": "UserHeatmapData represents the contributions of a user in a given time",
       "type": "object",
-      "required": [
-        "timestamp",
-        "contributions"
-      ],
+      "required": ["timestamp", "contributions"],
       "properties": {
         "contributions": {
           "type": "integer",
@@ -17240,10 +15455,7 @@
     },
     "UserOnboarding": {
       "type": "object",
-      "required": [
-        "profile",
-        "find_collaborators"
-      ],
+      "required": ["profile", "find_collaborators"],
       "properties": {
         "find_collaborators": {
           "type": "boolean",
@@ -17258,11 +15470,7 @@
     },
     "UserOnboardingProfileOption": {
       "type": "object",
-      "required": [
-        "tech_stack",
-        "notify_jobs",
-        "notify_bounties"
-      ],
+      "required": ["tech_stack", "notify_jobs", "notify_bounties"],
       "properties": {
         "notify_bounties": {
           "type": "boolean",
